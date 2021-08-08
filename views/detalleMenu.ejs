@@ -17,8 +17,11 @@
           <h1 class="ps-center"><%= item.name %></h1>
           <br />
           <h4><%= item.description %></h4>
+          <% if (item.id < 4) { %>
+            <p>Plato típico</p>
+          <% } %>
           <p class="ps-text-grey">
-            U$S <%= item.price %>
+            U$S <%= item.price.toFixed(2) %>
           </p>
         </div>
 

@@ -8,9 +8,8 @@ module.exports = {
     }),
     detalle : (req,res) => {
         let item = menu.find(item => item.id == +req.params.id);
-        return res.send(item)
-        /* return res.render('detalleMenu',{
+        return res.render('detalleMenu',{
             item
-        }); */
+        });
     }
 }
