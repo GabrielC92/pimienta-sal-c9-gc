@@ -4,6 +4,13 @@ const menu = JSON.parse(fs.readFileSync(path.join(__dirname,'..','data','menu.js
 
 module.exports = {
     index : (req,res) => res.render('index',{
-        menu
+        menu,
     }),
+    detalle : (req,res) => {
+        let item = menu.find(item => item.id == +req.params.id);
+        return res.send(item)
+        /* return res.render('detalleMenu',{
+            item
+        }); */
+    }
 }

@@ -76,6 +76,9 @@ img {
 a {
   color: inherit;
 }
+.link-detalle-menu{
+  text-decoration: none;
+}
 .ps-bordered tr,
 .ps-table-all tr {
   border-bottom: 1px solid #ddd;
